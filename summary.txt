@@ -1,0 +1,8 @@
+KLA RestoreNet-Hybrid validation summary
+Images: 32
+Final PSNR: 27.413 dB
+Final SSIM: 0.7105
+Baseline classical PSNR: 27.104 dB
+Baseline classical SSIM: 0.6938
+Inference elapsed seconds: 5.0841
+CSV: results/metrics.csv

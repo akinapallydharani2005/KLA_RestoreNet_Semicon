@@ -1,0 +1,16 @@
+{
+  "dataset": "bundled synthetic sanity-check validation",
+  "official_kla_hidden_test": false,
+  "model": "KLAHybridRestorer",
+  "metrics": {
+    "psnr_db": 27.413,
+    "ssim": 0.7105,
+    "lpips": null
+  },
+  "baseline": {
+    "name": "fast classical median+bicubic+unsharp",
+    "psnr_db": 27.104,
+    "ssim": 0.6938
+  },
+  "runtime_note": "CPU smoke-test only; official runtime should be measured on NVIDIA H100."
+}
