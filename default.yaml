@@ -1,0 +1,23 @@
+project: KLA_RestoreNet_Hybrid
+model:
+  name: KLAHybridRestorer
+  channels: 32
+  depth: 6
+  scale: 2
+  residual_scale: 0.20
+training:
+  seed: 42
+  optimizer: AdamW
+  learning_rate: 0.002
+  batch_size: 8
+  patch_size: 128
+  epochs_demo: 3
+loss:
+  l1: 1.0
+  gradient: 0.10
+  ssim_weight_planned: 0.20
+inference:
+  input_range: NoisyLR may be slightly outside [0,1]
+  output_range: clip to [0,1]
+  preserve_relative_filenames: true
+  default_scale_factor: 2
